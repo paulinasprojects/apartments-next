@@ -8,7 +8,7 @@ import { MdAlternateEmail } from "react-icons/md";
 
 export const Footer = () => {
   return (
-    <footer className="flex gap-6 items-center bg-neutral-100 w-full px-7 py-4">
+    <footer className="flex gap-6 items-center bg-neutral-100 w-full lg:px-7 py-4 max-sm:flex-col max-sm:gap-4 md:flex-col lg:flex-row">
       <Link href="/">
         <Image
           src="/logo.png"
@@ -24,7 +24,7 @@ export const Footer = () => {
           Equal Housing Opportunity
         </p>
       </div>
-      <div className="flex items-center ml-auto gap-4 mt-2">
+      <div className="flex items-center lg:ml-auto gap-4 mt-2 max-sm:ml-0 md:ml-0">
         <Link href="/" className="flex items-center bg-[#4c4c4c] hover:bg-black transition-colors duration-500 text-white rounded-full p-1.5">
           <FaFacebookF className="size-5"/>
         </Link>
