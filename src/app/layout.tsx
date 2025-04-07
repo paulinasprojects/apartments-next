@@ -4,6 +4,8 @@ import { Toaster } from "sonner";
 import { ThemeProvider } from "@/providers/theme-provider";
 import "./globals.css";
 import AuthProvider from "@/providers/auth-provider";
+import { Navbar } from "@/components/common/navbar";
+import { Footer } from "@/components/common/footer";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -33,7 +35,13 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <AuthProvider>
+            <div className="main-layout">
+            <Navbar/>
+            <div className="children-container">
             {children}
+            </div>
+            <Footer/>
+            </div>
             <Toaster richColors/>
           </AuthProvider>
         </ThemeProvider>

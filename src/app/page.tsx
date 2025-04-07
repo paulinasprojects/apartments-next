@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <div>
-      Hello Apartments
+      Hello World
     </div>
   );
 }

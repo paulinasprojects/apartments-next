@@ -112,28 +112,30 @@ export const LoginForm = () => {
             >
               Login
             </Button>
-            <Button
-              disabled={isLoading || isSubmitting}
-              className="w-full"
-              size="lg"
-              variant="outline"
-              onClick={() => signIn("google", { callbackUrl: "/" })}
-            >
-              <FcGoogle className="mr-2 size-5"/>
-              Continue with Google
-            </Button>
-            <Button
-              disabled={isLoading || isSubmitting}
-              className="w-full"
-              size="lg"
-              variant="outline"
-              onClick={() => signIn("github", { callbackUrl: "/" })}
-            >
-              <FaGithub className="mr-2 size-5"/>
-              Continue with Github
-            </Button>
           </form>
         </Form>
+        <div className="flex flex-col gap-4 mt-4">
+        <Button
+          disabled={isLoading || isSubmitting}
+          className="w-full"
+          size="lg"
+          variant="outline"
+          onClick={() => signIn("google", { callbackUrl: "/" })}
+        >
+          <FcGoogle className="mr-2 size-5"/>
+          Continue with Google
+        </Button>
+        <Button
+          disabled={isLoading || isSubmitting}
+          className="w-full"
+          size="lg"
+          variant="outline"
+          onClick={() => signIn("github", { callbackUrl: "/" })}
+        >
+          <FaGithub className="mr-2 size-5"/>
+          Continue with Github
+        </Button>
+        </div>
       </CardContent>
     </Card>
   )
