@@ -76,3 +76,16 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+
+input:is(:-webkit-autofill, :autofill) {
+  -webkit-box-shadow: 0 0 0 1000px #f5f5f5 inset; /* Change #f5f5f5 to your desired background color */
+  box-shadow: 0 0 0 1000px #f5f5f5 inset;
+  -webkit-text-fill-color: #000; /* Optional: Change the text color */
+}
+
+input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 1000px #f5f5f5 inset; /* Example light blue */
+  box-shadow: 0 0 0 1000px #f5f5f5 inset;
+  -webkit-text-fill-color: #000; /* Optional */
+}
