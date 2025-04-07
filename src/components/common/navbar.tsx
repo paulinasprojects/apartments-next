@@ -7,7 +7,7 @@ export const Navbar = async () => {
   const currentUser = await getCurrentUser();
 
   return (
-    <nav className="flex items-center justify-between px-7 py-2 border-b shadown-sm">
+    <nav className="flex items-center justify-between md:px-7 max-sm:px-3 py-2 border-b shadown-sm">
       <p className="flex items-center gap-4 text-[.875rem]">
         <MenuIcon className="cursor-pointer size-5"/>
         Menu

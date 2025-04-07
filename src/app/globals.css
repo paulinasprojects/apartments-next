@@ -104,18 +104,7 @@ input:-webkit-autofill:focus {
   flex-basis: 0%;
 }
 
-.hero-section {
-  background: url("/hero-image.jpg");
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  height: 322px;
-}
+
 
 .hero-overlay {
   position: absolute;
